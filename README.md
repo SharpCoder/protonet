@@ -1,12 +1,11 @@
-protonet
+Proto-Net
 ========
-ProtoNet is a barebonese C# Neural Network designed to be an example of backpropagation.
+This project is a barebonese C# Neural Network designed to be an example of how to implement backpropagation.
+My goal was to heavily comment the code and make it as logical as possible. There is a fair amount of recursion
+and, although it is not the most efficient implementation, I wanted to make this neural network easier
+to digest from a comprehensive perspective and focused on trying to point out what each thing does.
 
-Where's the code?
+Background
 ========
-ProtoNet will be uploaded tonight (at which point I'll update my readme!) I am working out some bugs, but wanted to
-psych myself up with a github repo :)
-
-I'm trying to make the code as readable and well-documented as possible, enabling people to easily understand and learn
-how to implement their own backpropagation networks. After spending a "casual" year trying to make sense of the algorithm,
+After spending an ungodly amount of time trying to make sense of the backpropagation algorithm,
 something clicked for me. I wish to share this knowledge with others, hopefully saving someone a year of pondering!
