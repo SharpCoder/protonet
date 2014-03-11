@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 namespace ProtoNetwork
 {
-	class ProtoNet
+	public class ProtoNet
 	{
 		private Random rand;
 		private Neuron[] inputs;
