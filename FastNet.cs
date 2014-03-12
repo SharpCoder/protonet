@@ -11,6 +11,10 @@
 // to hone in on the proper weights that can represent the XOR
 // challenge.
 
+// Check out my blog for more information - contains supplementary information
+// specifically designed around this file.
+// http://neuralresearch.blogspot.com/2014/03/lets-code-writing-basic-neural-network.html
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,10 +41,7 @@ namespace ProtoNetwork
 			// through multiple iterations of my program.
 			this.rand = new Random(424242);
 
-			// Since we have a topology of 2-2-1, we know there are 10 weights.
-			// Check out my website for more information. 
-			// http://debuggle.com/Home/ProtoNet
-				
+			// Since we have a topology of 2-2-1, we know there are 10 weights.				
 			weights = new float[10];
 			outputs = new float[5];
 
