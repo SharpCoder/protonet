@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>Neural Network Test Case</title>
+		<script type="text/javascript" src="protonet.js"></script>
+		<script type="text/javascript">
+			
+			var topology = [2, 2, 1];
+			var network = new ProtoNet(topology);
+			
+			function init() {
+				var epoch = 10000;
+				
+				for ( var i = 0; i < epoch; i++ ) {
+					network.Train([0,0],0);
+					network.Train([1,0],1);
+					network.Train([0,1],1);
+					network.Train([1,1],0);
+				}
+				
+				document.writeln(" Here is the output of our training session. Please note: without a seeded random, ");
+				document.writeln(" it's possible for this to experience a local minima that prevents the network from ");
+				document.writeln(" training properly. <br/><br/>");
+				document.writeln(" <0, 0> " + network.GetValue([0,0]) + "<br/>");
+				document.writeln(" <1, 0> " + network.GetValue([1,0]) + "<br/>");
+				document.writeln(" <0, 1> " + network.GetValue([0,1]) + "<br/>");
+				document.writeln(" <1, 1> " + network.GetValue([1,1]) + "<br/><br/>");
+				
+			}
+			
+		</script>
+	</head>
+	<body onload="init()">
+	</body>
+</html>
